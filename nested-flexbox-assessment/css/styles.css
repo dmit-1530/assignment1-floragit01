@@ -1,0 +1,174 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.inner-container {
+    max-width: 1528px;
+    margin: 0 auto;
+}
+/* 
+--inner-container--
+let header, main, and footer are in a max-width:1528px 
+*/
+header {
+    background-color: #0C4A6E;
+    color: white;
+}
+header,
+main,
+footer {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+
+h1 {
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 150%;
+    font-style: normal;
+    line-height: 150%;
+    text-align: left;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+h4 {
+    font-size: 2.125rem;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 150%;
+    font-style: normal;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    
+}
+/* 
+--.flex-container--
+display(flex):let Team Members' section and Service Plans' section are in a row. / makes the element a flex container
+flex-wrap(wrap): allows cards to wrap to next row on smaller screens
+instead of shrinking too much or causing horizontal scroll 
+*/
+
+/* team members */
+.members h2 {
+    padding-top: 1.8rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.members .flex-container section {
+    display: flex;
+    background-color: grey;   
+    align-items: center;
+    width: calc((100% / 2) - (2rem / 2));
+}
+/* 
+--.members .flex-container section--
+display(flex): in order to let <p> be next to <img>
+align-items(center): let <h3> and <p> are centered / aligns items on the cross axis
+width(calc()): caculate then let 4 section to be 4-column layout that wraps to two lines 
+*/
+
+
+.members img {
+    padding-left: 1.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; 
+}
+
+
+.members .flex-container section h3,
+.members .flex-container section p {
+    padding-left: 3.5rem;
+    padding-right: 1.75rem;
+}
+
+/* service plans */
+.plans {
+   margin-bottom: 6rem;;
+}
+
+
+.plans h2 {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+} 
+
+.plans h3 {
+    padding-top: 1.75rem;
+}  
+.plans .flex-container section {
+    background-color: grey;  
+    
+}
+
+ul {
+    list-style-type: disc;
+    
+    
+    
+}
+.card {
+    width: calc((100% / 3) - (4rem / 3));
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between; 
+    align-items: center;
+    padding-bottom: 1.8rem;    
+}
+/* 
+--card--
+flex-flow(wrap): Items wrap onto multiple lines if needed.
+justify-content(space-between):controls how flex items are distributed along the main axis (usually horizontal). / aligns items on the main axis
+align-items(center):vertically centered / aligns items on the cross axis
+*/
+
+.card h4 {
+    text-align: center;
+}
+
+
+.plans .flex-container p {
+    color: #0C4A6E;
+    font-size: 1.5rem;
+    
+} 
+
+
+/* footer */
+footer {
+    background-color: #0C4A6E;
+    color: white;
+    
+}
+
+footer cite {
+    font-style: italic;
+    
+   
+}
+footer div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
